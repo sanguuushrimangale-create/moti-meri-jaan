@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Moti Meri Jaan ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    background:
+        radial-gradient(circle at 20% 20%, #3b1025 0%, transparent 35%),
+        radial-gradient(circle at 80% 80%, #241044 0%, transparent 35%),
+        #050308;
+    color:white;
+    font-family:Georgia,serif;
+    overflow-x:hidden;
+}
+
+/* Stars */
+
+.star{
+    position:fixed;
+    width:2px;
+    height:2px;
+    background:white;
+    border-radius:50%;
+    opacity:.7;
+    animation:twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle{
+    from{opacity:.2;}
+    to{opacity:1;}
+}
+
+/* Hearts */
+
+.heart{
+    position:fixed;
+    bottom:-30px;
+    color:#ff4f88;
+    pointer-events:none;
+    animation:floatUp linear forwards;
+    z-index:1;
+}
+
+@keyframes floatUp{
+    0%{
+        transform:translateY(0) scale(.6);
+        opacity:0;
+    }
+    15%{opacity:.8;}
+    100%{
+        transform:translateY(-110vh) scale(1.3);
+        opacity:0;
+    }
+}
+
+/* Sections */
+
+section{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px 22px;
+}
+
+.box{
+    width:100%;
+    max-width:750px;
+}
+
+.small{
+    color:#ff6b9b;
+    letter-spacing:5px;
+    font-size:11px;
+    text-transform:uppercase;
+    margin-bottom:25px;
+}
+
+h1{
+    font-size:clamp(42px,11vw,82px);
+    line-height:1.05;
+    font-weight:normal;
+}
+
+h1 span{
+    color:#ff5c91;
+    text-shadow:0 0 30px rgba(255,92,145,.5);
+}
+
+.intro{
+    color:#aaa;
+    font-size:17px;
+    line-height:1.8;
+    margin:30px auto;
+    max-width:570px;
+}
+
+button{
+    background:transparent;
+    border:1px solid #ff5c91;
+    color:white;
+    padding:14px 28px;
+    border-radius:50px;
+    font-family:inherit;
+    cursor:pointer;
+    transition:.4s;
+}
+
+button:hover{
+    background:#ff5c91;
+    box-shadow:0 0 35px #ff5c9166;
+    transform:scale(1.05);
+}
+
+/* Birthday */
+
+.birthday{
+    font-size:clamp(30px,8vw,58px);
+    line-height:1.3;
+}
+
+.birthday span{
+    color:#ff5c91;
+}
+
+.message{
+    margin-top:30px;
+    font-size:20px;
+    line-height:2;
+    color:#ddd;
+}
+
+/* Reveal */
+
+.secret{
+    display:none;
+    margin-top:35px;
+    font-size:20px;
+    line-height:2;
+    color:#eee;
+    animation:reveal 1.5s ease;
+}
+
+.secret.show{
+    display:block;
+}
+
+@keyframes reveal{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+        filter:blur(5px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+        filter:blur(0);
+    }
+}
+
+/* Pickup */
+
+.pickup{
+    font-size:24px;
+    line-height:1.8;
+    font-style:italic;
+    color:#eee;
+    margin-top:30px;
+}
+
+/* Final */
+
+.final-title{
+    font-size:clamp(38px,9vw,70px);
+    font-weight:normal;
+}
+
+.final-title span{
+    color:#ff5c91;
+}
+
+.final-text{
+    margin-top:30px;
+    color:#bbb;
+    font-size:18px;
+    line-height:2;
+}
+
+.signature{
+    margin-top:45px;
+    color:#ff6b9b;
+    font-size:18px;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#444;
+    font-size:11px;
+}
+</style>
+</head>
+
+<body>
+
+
+<!-- INTRO -->
+
+<section>
+
+<div class="box">
+
+<div class="small">
+A little birthday surprise
+</div>
+
+<h1>
+Happy Birthday<br>
+<span>Motii Meri Jaan ❤️</span>
+</h1>
+
+<p class="intro">
+Prachi, I could have simply wished you in a message...
+but you deserve something a little more special.
+</p>
+
+<button onclick="goBirthday()">
+Open Your Surprise 💌
+</button>
+
+</div>
+
+</section>
+
+
+<!-- BIRTHDAY -->
+
+<section id="birthday">
+
+<div class="box">
+
+<div class="small">
+Today is about you
+</div>
+
+<div class="birthday">
+
+Happy Birthday,
+<br>
+<span>Prachi ❤️</span>
+
+</div>
+
+<p class="message">
+
+Moti Meri Jaan,
+<br><br>
+
+I hope today reminds you of how deeply loved,
+appreciated and special you really are.
+
+<br><br>
+
+You deserve beautiful moments,
+genuine smiles,
+peace in your heart,
+and every little happiness
+you secretly wish for.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- DEEP MESSAGE -->
+
+<section>
+
+<div class="box">
+
+<div class="small">
+Something from my heart
+</div>
+
+<p class="message">
+
+Moti Meri Jaan...
+
+<br><br>
+
+I don't know exactly when you became
+such an important part of my life.
+
+Maybe it was through our conversations.
+
+Maybe through the little things.
+
+Maybe it happened so quietly
+that I didn't even notice.
+
+<br><br>
+
+But somewhere between
+all those random moments,
+you became someone
+I never want to imagine my days without.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- SECRET -->
+
+<section>
+
+<div class="box">
+
+<div class="small">
+One thing I never say enough
+</div>
+
+<button onclick="showSecret()">
+Tap this, Moti ❤️
+</button>
+
+<div id="secret" class="secret">
+
+Moti Meri Jaan...
+
+<br><br>
+
+If I could give you one thing
+for your birthday,
+I wouldn't give you something expensive.
+
+<br><br>
+
+I'd give you the ability
+to see yourself through my eyes
+for just one minute.
+
+<br><br>
+
+Then you'd understand
+why your smile matters to me,
+why your presence feels different,
+and why even your smallest messages
+can change my entire mood.
+
+<br><br>
+
+You're not just someone
+I love talking to.
+
+<br>
+
+You're someone
+I look forward to talking to.
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PICKUP LINES -->
+
+<section>
+
+<div class="box">
+
+<div class="small">
+Okay... one little confession 😭
+</div>
+
+<div class="pickup">
+
+"Are you my birthday wish?
+
+Because somehow,
+every good thing I could ask for
+already looks a lot like you." ❤️
+
+<br><br>
+
+"People say the moon is beautiful...
+
+but they clearly haven't seen
+my Moti smiling." 🌙
+
+<br><br>
+
+"And if loving you is a bad habit...
+
+I'm honestly not looking for a cure."
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FINAL -->
+
+<section>
+
+<div class="box">
+
+<div class="small">
+Before you leave...
+</div>
+
+<h2 class="final-title">
+
+Happy Birthday,
+<br>
+<span>Moti Meri Jaan ❤️</span>
+
+</h2>
+
+<p class="final-text">
+
+I hope this new year of your life
+brings you closer to everything
+your heart has been quietly wishing for.
+
+<br><br>
+
+And selfishly...
+
+I hope I get to be there
+for many of those moments.
+
+<br><br>
+
+More conversations.
+More laughter.
+More stupid jokes.
+More memories.
+More "Moti Meri Jaan".
+
+<br><br>
+
+I don't know what the future holds...
+
+but if you're somewhere in it,
+
+I already have one reason
+to look forward to it.
+
+</p>
+
+<div class="signature">
+
+Made especially for Prachi ❤️<br>
+From someone who calls you...
+<br><br>
+
+<b>MOTI MERI JAAN</b>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+For Prachi — my Moti Meri Jaan ❤️
+</footer>
+
+
+<script>
+
+/* Go to birthday */
+
+function goBirthday(){
+
+    document.getElementById("birthday")
+    .scrollIntoView({
+        behavior:"smooth"
+    });
+
+}
+
+
+/* Secret message */
+
+function showSecret(){
+
+    document
+    .getElementById("secret")
+    .classList.add("show");
+
+}
+
+
+/* Floating hearts */
+
+function createHeart(){
+
+    const heart =
+    document.createElement("div");
+
+    heart.className="heart";
+
+    heart.innerHTML =
+    Math.random() > .5 ? "♥" : "♡";
+
+    heart.style.left =
+    Math.random()*100 + "vw";
+
+    heart.style.fontSize =
+    (10 + Math.random()*18) + "px";
+
+    heart.style.animationDuration =
+    (5 + Math.random()*6) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },11000);
+
+}
+
+setInterval(createHeart,650);
+
+
+/* Stars */
+
+for(let i=0;i<70;i++){
+
+    const star =
+    document.createElement("div");
+
+    star.className="star";
+
+    star.style.left =
+    Math.random()*100+"vw";
+
+    star.style.top =
+    Math.random()*100+"vh";
+
+    star.style.animationDelay =
+    Math.random()*3+"s";
+
+    document.body.appendChild(star);
+
+}
+
+</script>
+
+</body>
+</html>
